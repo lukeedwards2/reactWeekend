@@ -1,18 +1,16 @@
 import React from 'react';
-
+import GalleryList from '../GalleryList';
+import Header from './Header';
 
 function App() {
-    return (
-      <div>
-        <header>
-          <h1>React Gallery</h1>
-        </header>
-
-        <p>The gallery goes here!</p>
-        <img src="images/goat_small.jpg"/>
-        <img src="images/goat_stache.png"/>
-      </div>
-    );
+return (
+<>
+<Header name ="Luke"/>
+<div data-testid="app">
+<GalleryList />
+</div>
+</>
+)
 }
 
 export default App;
